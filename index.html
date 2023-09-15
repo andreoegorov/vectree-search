@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="D:\vectree-search\style.css" />
     <title>Search</title>
 </head>
 <body>
-    <p>A</p>
+    <header id="header">
+        <img alt="logo" id="logo" src="data:image/png;base64,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">
+        <div id="search">
+            <form action="#" method="get">
+                <div id="search-elements">
+                    <input type="text" title="search" id="search-input" />
+                    <input type="submit" id="search-button" value="Search" />
+                </div>
+            </form>
+            <nav id="nav">
+                <a href="#">Класс</a>
+                <a href="#">Курсы</a>
+                <a href="#">Карьера</a>
+                <a href="#">Менторы</a>
+                <a href="#">Поддержка</a>
+            </nav>
+        </div>
+        <div id="profile">
+        <p id="profile-name">andreoegorov</p>
+        <img src="https://avatars0.githubusercontent.com/u/45194962?v=4" id="profile-img" alt="profile-img">
+        </div>
+    </header>
+    <main>
+        <article class="article">
+            <i class="article-icon"></i>
+            <h2><a href="#">JavaScript | Доп. материалы - Vectree</a></h2>
+            <p><a href="#">vectree.ru›digest/3/0/0</a></p>
+            <p>В данном разделе вы изучите один из наиболее популярных языков программирования - JavaScript.</p>
+        </article>
+
+        <article class="article">
+            <i class="article-icon"></i>
+            <h2><a href="#">Основы веб-разработки | Основы веб - Vectree</a></h2>
+            <p><a href="#">vectree.ru›text/147/1/0</a></p>
+            <p>Часто мы также говорим о frontend и backend. Браузер является frontend'ом (внешним интерфейсом), а запускаемый в браузере JavaScript - кодом frontend'а</p>
+        </article>
+        
+        <article class="article">
+            <i class="article-icon"></i>
+            <h2><a href="#">JavaScript | Чистый код | Конспект - Vectree</a></h2>
+            <p><a href="#">vectree.ru›text/46/5/0</a></p>
+            <p>Рассмотрим следующие 2 фрагмента JavaScript ... Различные руководства по стилю JS рекомендуют разные варианты, и разницы не особо много.</p>
+        </article>
+                
+        <article class="article">
+            <i class="article-icon"></i>
+            <h2><a href="#">JavaScript | Основы | Видео - Vectree</a></h2>
+            <p><a href="#">vectree.ru›video/46/1/1</a></p>
+            <p>В данном уроке мы наконец-то изучим JavaScript и узнаем, как сделать страницу ... Используя JavaScript, мы можем заставить нашу веб-страницу.</p>
+        </article>
+        
+        <article class="article">
+            <i class="article-icon"></i>
+            <h2><a href="#">JavaScript | Frontend - Vectree</a></h2>
+            <p><a href="#">vectree.ru›path/78</a></p>
+            <p>Параллельно разберемся с тем, что помогает незаметно от клиента работать с API - асинхронным выполнением задач в JavaScript.</p>
+        </article>
+        
+        <article class="article">
+            <i class="article-icon"></i>
+            <h2><a href="#">JavaScript | Frontend - Vectree</a></h2>
+            <p><a href="#">vectree.ru›path/39</a></p>
+            <p>NodeJS - инструмент для написания backend на JavaScript, построенный на движке V8 от Google и библиотеке libuv</p>
+        </article>
+
+        <article class="article">
+            <i class="article-icon"></i>
+            <h2><a href="#">JavaScript | Frontend - Vectree</a></h2>
+            <p><a href="#">vectree.ru›path/104</a></p>
+            <p>Сделайте свой сайт динамичным и интерактивным с помощью JavaScript! В рамках курса вы будете реализовывать разный функционал и автономные...</p>
+        </article>
+
+        <article class="article">
+            <i class="article-icon"></i>
+            <h2><a href="#">Введение в React | JavaScript - Vectree</a></h2>
+            <p><a href="#">vectree.ru›text/148/2/0</a></p>
+            <p>Официальное название стандарта Javascript - ECMAScript. ... Javascript напоминает по названию и по синтаксису Java.</p>
+        </article>
+
+        <article class="article">
+            <i class="article-icon"></i>
+            <h2><a href="#">Добро пожаловать на курс JavaScript. Начните тут! - Vectree</a></h2>
+            <p><a href="#">vectree.ru›text/79/1/0</a></p>
+            <p>Если вы недавно ознакомились с уроком по основам JavaScript, вам этого будет достаточно для работы над данным курсом.</p>
+        </article>
+
+        <article class="article">
+            <i class="article-icon"></i>
+            <h2><a href="#">Глубже в Javascript | Глубже в функции - Vectree</a></h2>
+            <p><a href="#">vectree.ru›text/90/4/0?pathId=87</a></p>
+            <p>Вы можете сделать многое даже с простым Javascript, jQuery и пытливым умом. Но этот раздел погрузит вас глубже в то, как Javacscipt работает и даст..</p>
+        </article>
+    </main>
 </body>
 </html>
