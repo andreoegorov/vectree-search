@@ -1,4 +1,2 @@
 # vectree-search
-Assignment of a tutorial on creating a Search layout
-
-[vectee](https://vectree.ru/)
+Assignment of a tutorial on creating a Search layout [Vectee](https://vectree.ru/)
