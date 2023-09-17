@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="D:\vectree-search\style.css" />
-    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="D:\vectree-search\style.css"/>
+    <title>Search Vectree</title>
 </head>
 <body>
     <header id="header">
@@ -13,92 +13,118 @@
             <form action="#" method="get">
                 <div id="search-elements">
                     <input type="text" title="search" id="search-input" value="javascript"/>
-                    <input type="button" id="search-button" value="Поиск" />
+                    <input type="button" id="search-button" onclick="onClick()" value="Поиск" />
                 </div>
             </form>
             <nav id="nav">
-                <a href="#">Классы</a>
-                <a href="#">Курсы</a>
-                <a href="#">Карьера</a>
-                <a href="#">Менторы</a>
-                <a href="#">Поддержка</a>
+                <a href="https://vectree.ru/class">Классы</a>
+                <a href="https://vectree.ru/paths">Курсы</a>
+                <a href="https://vectree.ru/career">Карьера</a>
+                <a href="https://vectree.ru/mentoring">Менторы</a>
+                <a href="https://vectree.ru/support">Поддержка</a>
             </nav>
         </div>
         <div id="profile">
-        <p id="profile-name">andreoegorov <span class="caret">▼</span></p>
-        <img src="https://avatars0.githubusercontent.com/u/45194962?v=4" id="profile-img" alt="profile-img">
+            <p id="profile-name">andreoegorov</p>
+            <img src="https://avatars0.githubusercontent.com/u/45194962?v=4" id="profile-img" alt="profile-img">
         </div>
     </header>
     <main id="main">
         <article class="article">
-            <i class="article-icon"></i>
-            <h2><a href="#">JavaScript | Доп. материалы - Vectree</a></h2>
-            <p><a href="#">vectree.ru›digest/3/0/0</a></p>
-            <p>В данном разделе вы изучите один из наиболее популярных языков программирования - JavaScript.</p>
+            <img src="search-icon.svg" class="article-icon" alt>
+            <div class="article-block">
+                <h2><a href="https://vectree.ru/digest/3/0/0">JavaScript | Доп. материалы - Vectree</a></h2>
+                <p><a href="https://vectree.ru/digest/3/0/0" class="article-source">vectree.ru›digest/3/0/0</a></p>
+                <p>В данном разделе вы изучите один из наиболее популярных языков программирования - JavaScript.</p>
+            </div>
         </article>
 
         <article class="article">
-            <i class="article-icon"></i>
-            <h2><a href="#">Основы веб-разработки | Основы веб - Vectree</a></h2>
-            <p><a href="#">vectree.ru›text/147/1/0</a></p>
-            <p>Часто мы также говорим о frontend и backend. Браузер является frontend'ом (внешним интерфейсом), а запускаемый в браузере JavaScript - кодом frontend'а</p>
+            <img src="search-icon.svg" class="article-icon" alt>
+            <div class="article-block">
+                <h2><a href="https://vectree.ru/text/147/1/0">Основы веб-разработки | Основы веб - Vectree</a></h2>
+                <p><a href="https://vectree.ru/text/147/1/0" class="article-source">vectree.ru›text/147/1/0</a></p>
+                <p>Часто мы также говорим о frontend и backend. Браузер является frontend'ом (внешним интерфейсом), а запускаемый в браузере JavaScript - кодом frontend'а</p>
+            </div>
         </article>
         
         <article class="article">
-            <i class="article-icon"></i>
-            <h2><a href="#">JavaScript | Чистый код | Конспект - Vectree</a></h2>
-            <p><a href="#">vectree.ru›text/46/5/0</a></p>
-            <p>Рассмотрим следующие 2 фрагмента JavaScript ... Различные руководства по стилю JS рекомендуют разные варианты, и разницы не особо много.</p>
+            <img src="search-icon.svg" class="article-icon" alt>
+            <div class="article-block">
+                <h2><a href="https://vectree.ru/text/46/5/0">JavaScript | Чистый код | Конспект - Vectree</a></h2>
+                <p><a href="https://vectree.ru/text/46/5/0" class="article-source">vectree.ru›text/46/5/0</a></p>
+                <p>Рассмотрим следующие 2 фрагмента JavaScript ... Различные руководства по стилю JS рекомендуют разные варианты, и разницы не особо много.</p>
+        <   div>
         </article>
                 
         <article class="article">
-            <i class="article-icon"></i>
-            <h2><a href="#">JavaScript | Основы | Видео - Vectree</a></h2>
-            <p><a href="#">vectree.ru›video/46/1/1</a></p>
-            <p>В данном уроке мы наконец-то изучим JavaScript и узнаем, как сделать страницу ... Используя JavaScript, мы можем заставить нашу веб-страницу.</p>
+            <img src="search-icon.svg" class="article-icon" alt>
+            <div class="article-block">
+                <h2><a href="https://vectree.ru/video/46/1/1">JavaScript | Основы | Видео - Vectree</a></h2>
+                <p><a href="https://vectree.ru/video/46/1/1" class="article-source">vectree.ru›video/46/1/1</a></p>
+                <p>В данном уроке мы наконец-то изучим JavaScript и узнаем, как сделать страницу ... Используя JavaScript, мы можем заставить нашу веб-страницу.</p>
+            </div>
         </article>
         
         <article class="article">
-            <i class="article-icon"></i>
-            <h2><a href="#">JavaScript | Frontend - Vectree</a></h2>
-            <p><a href="#">vectree.ru›path/78</a></p>
-            <p>Параллельно разберемся с тем, что помогает незаметно от клиента работать с API - асинхронным выполнением задач в JavaScript.</p>
+            <img src="search-icon.svg" class="article-icon" alt>
+            <div class="article-block">
+                <h2><a href="https://vectree.ru/path/78">JavaScript | Frontend - Vectree</a></h2>
+                <p><a href="https://vectree.ru/path/78" class="article-source">vectree.ru›path/78</a></p>
+                <p>Параллельно разберемся с тем, что помогает незаметно от клиента работать с API - асинхронным выполнением задач в JavaScript.</p>
+        <   /div>
         </article>
         
         <article class="article">
-            <i class="article-icon"></i>
-            <h2><a href="#">JavaScript | Frontend - Vectree</a></h2>
-            <p><a href="#">vectree.ru›path/39</a></p>
-            <p>NodeJS - инструмент для написания backend на JavaScript, построенный на движке V8 от Google и библиотеке libuv</p>
+            <img src="search-icon.svg" class="article-icon" alt>
+            <div class="article-block">
+                <h2><a href="https://vectree.ru/path/39">JavaScript | Frontend - Vectree</a></h2>
+                <p><a href="https://vectree.ru/path/39" class="article-source">vectree.ru›path/39</a></p>
+                <p>NodeJS - инструмент для написания backend на JavaScript, построенный на движке V8 от Google и библиотеке libuv</p>
+            </div>
         </article>
 
         <article class="article">
-            <i class="article-icon"></i>
-            <h2><a href="#">JavaScript | Frontend - Vectree</a></h2>
-            <p><a href="#">vectree.ru›path/104</a></p>
-            <p>Сделайте свой сайт динамичным и интерактивным с помощью JavaScript! В рамках курса вы будете реализовывать разный функционал и автономные...</p>
+            <img src="search-icon.svg" class="article-icon" alt>
+            <div class="article-block">
+                <h2><a href="https://vectree.ru/path/104">JavaScript | Frontend - Vectree</a></h2>
+                <p><a href="https://vectree.ru/path/104" class="article-source">vectree.ru›path/104</a></p>
+                <p>Сделайте свой сайт динамичным и интерактивным с помощью JavaScript! В рамках курса вы будете реализовывать разный функционал и автономные...</p>
+            /div>
         </article>
 
         <article class="article">
-            <i class="article-icon"></i>
-            <h2><a href="#">Введение в React | JavaScript - Vectree</a></h2>
-            <p><a href="#">vectree.ru›text/148/2/0</a></p>
-            <p>Официальное название стандарта Javascript - ECMAScript. ... Javascript напоминает по названию и по синтаксису Java.</p>
+            <img src="search-icon.svg" class="article-icon" alt>
+            <div class="article-block">
+                <h2><a href="https://vectree.ru/text/148/2/0">Введение в React | JavaScript - Vectree</a></h2>
+                <p><a href="https://vectree.ru/text/148/2/0" class="article-source">vectree.ru›text/148/2/0</a></p>
+                <p>Официальное название стандарта Javascript - ECMAScript. ... Javascript напоминает по названию и по синтаксису Java.</p>
+            </div>
         </article>
 
         <article class="article">
-            <i class="article-icon"></i>
-            <h2><a href="#">Добро пожаловать на курс JavaScript. Начните тут! - Vectree</a></h2>
-            <p><a href="#">vectree.ru›text/79/1/0</a></p>
-            <p>Если вы недавно ознакомились с уроком по основам JavaScript, вам этого будет достаточно для работы над данным курсом.</p>
+            <img src="search-icon.svg" class="article-icon" alt>
+            <div class="article-block">
+                <h2><a href="https://vectree.ru/text/79/1/0">Добро пожаловать на курс JavaScript. Начните тут! - Vectree</a></h2>
+                <p><a href="https://vectree.ru/text/79/1/0" class="article-source">vectree.ru›text/79/1/0</a></p>
+                <p>Если вы недавно ознакомились с уроком по основам JavaScript, вам этого будет достаточно для работы над данным курсом.</p>
+            </div>
         </article>
 
         <article class="article">
-            <i class="article-icon"></i>
-            <h2><a href="#">Глубже в Javascript | Глубже в функции - Vectree</a></h2>
-            <p><a href="#">vectree.ru›text/90/4/0?pathId=87</a></p>
-            <p>Вы можете сделать многое даже с простым Javascript, jQuery и пытливым умом. Но этот раздел погрузит вас глубже в то, как Javacscipt работает и даст..</p>
+            <img src="search-icon.svg" class="article-icon" alt>
+            <div class="article-block">
+                <h2><a href="https://vectree.ru/text/90/4/0?pathId=87">Глубже в Javascript | Глубже в функции - Vectree</a></h2>
+                <p><a href="https://vectree.ru/text/90/4/0?pathId=87" class="article-source">vectree.ru›text/90/4/0?pathId=87</a></p>
+                <p>Вы можете сделать многое даже с простым Javascript, jQuery и пытливым умом. Но этот раздел погрузит вас глубже в то, как Javacscipt работает и даст..</p>
+            </div>
         </article>
+
     </main>
+    <script type="text/javascript">
+        function onClick(){
+            alert(" Layout only ¯\\_(ツ)_/¯");
+        }
+    </script>
 </body>
 </html>
